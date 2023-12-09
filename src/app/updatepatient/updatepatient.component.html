@@ -1,0 +1,18 @@
+<div>
+    <h1>Update Patient Details</h1>
+    <form>
+        PatientId: <input type="text" name="patientId" [(ngModel)]="patient.patientId"><br>
+        PatientName: <input type="text" name="patientName"  [(ngModel)]="patient.patientName"><br>
+        Age: <input type="text" name="age"  [(ngModel)]="patient.age"><br>
+        Gender: <input type="text" name="gender"  [(ngModel)]="patient.gender"><br>
+        Address: <input type="text" name="address"  [(ngModel)]="patient.address"><br>
+        EmergencyContactNumber: <input type="text" name="emergencyContactNumber"  [(ngModel)]="patient.emergencyContactNumber"><br>
+        Diagnosis: <input type="text" name="diagnosis" [(ngModel)]="patient.diagnosis"><br>
+        Treatment: <input type="text" name="treatment"  [(ngModel)]="patient.treatment"><br>
+        Bill: <input type="text" name="bill"  [(ngModel)]="patient.bill"><br>
+        <input type="button" value="submit" (click)="updatepatient()">
+    </form>
+
+   <div id="msg"> {{msg}}</div>
+</div>
+

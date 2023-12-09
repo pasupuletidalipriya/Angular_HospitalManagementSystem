@@ -1,0 +1,23 @@
+<div>
+    <h1>Doctors List</h1>
+      <table border="5">
+          <thead>
+            <tr>
+              <th>DoctorId</th>
+              <th>DoctorName</th>
+              <th>Sepecialization</th>
+              <th>Qualification</th>
+              <th>ContactInfo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let doctor of doctors ">
+              <td>{{doctor.doctorId}}</td>
+              <td>{{doctor.doctorName}}</td>
+              <td>{{doctor.specialization}}</td>
+              <td>{{doctor.qualification}}</td>
+              <td>{{doctor.contactInfo}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>

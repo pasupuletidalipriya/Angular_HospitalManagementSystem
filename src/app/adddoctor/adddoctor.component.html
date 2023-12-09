@@ -1,0 +1,13 @@
+<div>
+    <h1>Insert Doctor Details</h1>
+    <form>
+        DoctorId: <input type="text" name="doctorId" [(ngModel)]="doctor.doctorId"><br>
+        DoctorName: <input type="text" name="doctorName"  [(ngModel)]="doctor.doctorName"><br>
+        Specialization: <input type="text" name="specialization"  [(ngModel)]="doctor.specialization"><br>
+        Qualification: <input type="text" name="qualification"  [(ngModel)]="doctor.qualification"><br>
+        ContactInfo: <input type="text" name="contactInfo"  [(ngModel)]="doctor.contactInfo"><br>
+        <input type="button" value="submit" (click)="adddoctor()">
+    </form>
+
+   <div id="msg"> {{msg}}</div>
+</div>

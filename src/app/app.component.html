@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" type="text/css" href="app.component.css">
+
+    <!-- Add your stylesheets and scripts here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hospital Management System</h1>
+        <!-- Add navigation or header content as needed -->
+    </header>
+
+    <main class="container">
+        <h2>Welcome to the Hospital Management System</h2>
+        <!-- Add your components and content here -->
+        <router-outlet></router-outlet>
+        <section>
+            <h3>Doctors</h3>
+            <!-- Add doctor-related content -->
+            <ul>
+              <li><a routerLink="adddoctor" routerLinkActive="active">Add Doctors</a></li>
+              <li><a routerLink="doctorlist" routerLinkActive="active">Doctors List</a></li>
+              <li><a routerLink="updatedoctor" routerLinkActive="active">Update Doctors</a></li>
+              
+            </ul>
+        </section>
+
+        <section>
+            <h3>Patients</h3>
+            <!-- Add patient-related content -->
+            <ul>
+              <li><a routerLink="addpatient" routerLinkActive="active">Add Patients</a></li>
+              <li><a routerLink="patientlist" routerLinkActive="active">Patients List</a></li>
+              <li><a routerLink="updatepatient" routerLinkActive="active">Update Patients</a></li>
+       
+            </ul>
+        </section>
+
+        <section>
+            <h3>Appointments</h3>
+            <!-- Add appointment-related content -->
+            <ul>
+              <li><a routerLink="addappointment" routerLinkActive="active">Add Appointments</a></li>
+              <li><a routerLink="appointmentlist" routerLinkActive="active">Appointments List</a></li>
+              <li><a routerLink="updateappointment" routerLinkActive="active">Update Appointments</a></li>
+          
+            </ul>
+        </section>
+
+        <!-- Add more sections based on your system's features -->
+
+    </main>
+
+    <footer>
+        <!-- Add footer content as needed -->
+        <p>&copy; 2023 Hospital Management System</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+<div>
+    <h1>Insert Appointment Details</h1>
+    <form>
+        AppointmentId: <input type="number" name="appointmentId" [(ngModel)]="appointment.appointmentId"><br>
+        AppointmentDate: <input type="date" name="appointmentDate"  [(ngModel)]="appointment.appointmentDate"><br>
+        AppointmentTime: <input type="time" name="appointmentTime"  [(ngModel)]="appointment.appointmentTime"><br>
+        AppointmentStatus: <input type="text" name="appointmentStatus"  [(ngModel)]="appointment.appointmentStatus"><br>
+        DoctorId: <input type="text" name="doctorId"  [(ngModel)]="appointment.doctor.doctorId"><br>
+        PatientId: <input type="text" name="patientId"  [(ngModel)]="appointment.patient.patientId"><br>
+        <input type="button" value="submit" (click)="addappointment()">
+    </form>
+
+   <div id="msg"> {{msg}}</div>
+</div>
+
